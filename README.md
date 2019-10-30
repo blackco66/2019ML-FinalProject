@@ -1,5 +1,10 @@
 # 2019ML-FinalProject
 2019 1st semester Machine Learning Final Project at SNU
+### Project Objective
+![intro](https://github.com/blackco66/2019ML-FinalProject/blob/master/images/intro.JPG) 
+
+### Project Specification
+
 1. 모델 설명<br/>
 Spatiotemporal prediction 을 위해서 가장 흔히 쓰이는 것이 Recurrent Neural Net 구조이다. 가장 기본적인 RNN 부터 시작해서 LSTM, GRU 등 여러 가지 모델들이 사용되어 왔다. Prediction을 구현하기 위한 대부분의 모델들은 공통적으로 long-term dependency 성능 문제와 vanishing gradient 문제를 겪기 때문에 이러한 문제들을 얼마나 효과적으로 해결하느냐가 모델의 성능에 굉장히 중요하다. 이번 프로젝트에서 우리의 모델은 크게 Autoencoder 모델과 prediction 모델로 나눌 수 있다. 오토인코더의 경우 Dense layer 와 Convolution layer을 사용하였고 prediction의 경우 LSTM을 사용하였다.
 2. 모델 구조 <br/>
