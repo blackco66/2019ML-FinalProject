@@ -16,13 +16,13 @@ Keras 의 LSTM을 RNN 구조의 기본 cell로 사용하였으며 좋은 성능�
 
 4. 실행결과 
 - Text sequence35(randomly chosen) from 1st to 10th ↓
-![result01](./images/result01.jpg) 
+![result01](https://github.com/blackco66/2019ML-FinalProject/blob/master/images/result01.JPG) 
 11th to 20th predicted results↑
 - Text sequence50(randomly chosen) from 1st to 10th ↓
-![result02](./images/result02.jpg)           
+![result02](https://github.com/blackco66/2019ML-FinalProject/blob/master/images/result02.JPG)           
 11th to 20th predicted results↑
 
-5. 토의<br/>
+1. 토의<br/>
 모델의 더 좋은 성능과 효과적인 학습을 위해 여러 가지를 시도하였는데 그 중 몇 가지를 분석하고 앞으로 개선할 수 있는 방향에 대해서 생각해보았다. <br/>
 (1) Encoder는 CNN layer로 구성하는 것 보단 fully connected의 방식이 mae, mse, ssim 값의 측면에서 본연의 모습을 더 잘 유지해줬다.<br/>
 (2) Decoder를 [8, 8, 16] 에서 [64, 64, 3]으로 upsampling할 때 단순 interpolation에 의한 upsampling과 conv layer가 아닌 transpose convolution을 이용하여 upsampling과정에서 학습할 수 있는 여지를 주었다. <br/>
